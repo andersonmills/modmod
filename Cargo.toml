@@ -1,0 +1,6 @@
+[package]
+name = "modmod"
+version = "0.1.0"
+authors = ["Anderson Mills <anderson@puppet.com>"]
+
+[dependencies]

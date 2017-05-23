@@ -3,4 +3,8 @@ name = "modmod"
 version = "0.1.0"
 authors = ["Anderson Mills <anderson@puppet.com>"]
 
+[[bin]]
+name = "modmod"
+path = "src/modmod.rs"
+
 [dependencies]

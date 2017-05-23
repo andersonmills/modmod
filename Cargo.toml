@@ -8,3 +8,5 @@ name = "modmod"
 path = "src/modmod.rs"
 
 [dependencies]
+docopt = "0.7"
+rustc-serialize = "0.3"

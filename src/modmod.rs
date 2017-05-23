@@ -5,6 +5,8 @@ extern crate git2;
 use git2::Repository;
 use docopt::Docopt;
 
+mod parse;
+
 const USAGE: &'static str = "
 modmod
 
@@ -31,6 +33,8 @@ fn main() {
                             .and_then(|d| d.decode())
                             .unwrap_or_else(|e| e.exit());
     println!("{:?}", args);
+
+    parse::update_puppetfile_mods("cbrock", "1.2.3");
 
     let repo = match Repository::open(".") {
             Ok(repo) => repo,

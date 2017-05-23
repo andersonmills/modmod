@@ -62,10 +62,13 @@ fn main() {
         };
 
         println!("branch {}", branch_name);
-        //match option {
-            //Some(x) => println!("Result: {}", x.name()),
-            //None    => println!("Cannot divide by 0"),
-        //};
-        //println!("{:?}", branch.ok());
+
+        let cb = & mut git2::build::CheckoutBuilder::new();
+        // checkout_treeish ???
+
+        // Ah, need to revparse the branch name to get an object.
+        // Then checkout the git object.
+        //let co_result = repo.checkout_tree(&branch_tuple.0, Some(cb));
+
     }
 }

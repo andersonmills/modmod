@@ -10,3 +10,4 @@ path = "src/modmod.rs"
 [dependencies]
 docopt = "0.7"
 rustc-serialize = "0.3"
+git2 = "0.6"
